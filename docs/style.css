@@ -60,7 +60,7 @@ button {
 
 /* Estilos para dispositivos menores que 768px */
 @media only screen and (max-width: 768px) {
-	.container {
+	body {
 	  max-width: 100%;
 	  padding: 10px;
 	}
@@ -68,7 +68,7 @@ button {
   
   /* Estilos para dispositivos menores que 480px */
   @media only screen and (max-width: 480px) {
-	.container {
+	body {
 	  font-size: 14px;
 	}
   }
