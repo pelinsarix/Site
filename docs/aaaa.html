@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Layout com 3 seções verticais</title>
+    <style>
+      body {
+        background-color: #62110A;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+      	font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .secao {
+        border-radius: 15px;
+        display: inline-block;
+        width: 33%;
+        height: 700px;
+        vertical-align: top;
+      }
+
+      .meio {
+        background-color:rgba(132, 126, 100, 0.3)
+      }
+
+      .titulo{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        text-align: center ;
+      }
+      .nome{
+        padding: 5px;
+        width: 90%;
+        height: 100px;
+      }
+
+      .meu-botao {
+        width: 96%;
+        height: 10%;
+        position: relative;
+        background-color: #bf53158a;
+        border: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 3%;
+        border-radius: 8px;
+      }
+
+      .icone-adicionar {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        width: 32px;
+        height: 32px;
+        background-color: #b94d0fd6;
+        border-radius: 50%;
+        font-size: 20px;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+      }
+
+
+      h1{
+        color: aliceblue;
+        text-align: center;
+      }
+
+      .meu-botao2{
+        border-radius: 8px;
+        width: 96%;
+        height: 20%;
+        background-color:#8b706e;
+        border: 3%;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>PROTOCOLO X</h1>
+    <div class="secao esquerda">
+      <h1>ITENS</h1>
+      <button onclick=adicionarnome() class="meu-botao">Clique aqui<span class="icone-adicionar">+</span></button>
+      <button onclick=adicionarnome() class="meu-botao">Clique aqui<span class="icone-adicionar">+</span></button>
+      <button onclick=adicionarnome() class="meu-botao">Clique aqui<span class="icone-adicionar">+</span></button>
+      <button onclick=adicionarnome() class="meu-botao">Clique aqui<span class="icone-adicionar">+</span></button>
+      <button onclick=adicionarnome() class="meu-botao">Clique aqui<span class="icone-adicionar">+</span></button>
+    </div>
+    <div id="meu-container" class="secao meio"></div>
+    <div class="secao direita">
+      <h1>ETAPAS</h1>
+      <button onclick=adicionarnome() class="meu-botao">Clique aqui<span class="icone-adicionar">+</span></button>
+      <button onclick=adicionarnome() class="meu-botao">Clique aqui<span class="icone-adicionar">+</span></button>
+      <button onclick=adicionarnome() class="meu-botao">Clique aqui<span class="icone-adicionar">+</span></button>
+    </div>
+    <script src="tste.js"></script>
+  </body>
+</html> 
